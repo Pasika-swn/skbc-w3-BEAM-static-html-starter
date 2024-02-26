@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body class="bg-wd-black">
@@ -22,15 +30,258 @@
       <h1 class="text-6xl font-bold">Beam's Portfolio</h1>
       <p class="text-2xl font-light">[@skooldio] web-dev bootcamp</p>
     </header>
-    <main flex flex-col>
-      
-      <section></section>
-      <section></section>
-      <section></section>
+    <main class="flex flex-col px-8">
+      <div
+        class="w-full flex items-center text-primary font-semibold text-4xl gap-10 my-10 before:h-2 before:grow before:bg-primary after:h-2 after:grow after:bg-primary"
+      >
+        Mini-Projects
+      </div>
+      <section class="flex flex-col text-white gap-6 w-full">
+        <div class="flex w-full">
+          <img
+            class="w-[400px] h-[500px] object-cover object-top hover:cursor-pointer transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:scale-125"
+            src="https://assets.skooldio.com/courses/Intermediate+CSS/article/Project.png"
+            alt="feature-img-1"
+          />
+          <div class="flex flex-col justify-center gap-6 bg-wd-darkgrey px-8">
+            <h3 class="font-semibold text-2xl">
+              Project 1: HTML/CSS Static Website
+            </h3>
+            <p class="font-light text-xl">
+              Transforming concepts into reality with HTML/CSS, our static
+              online shop page features curated collections, detailed product
+              displays, an insightful 'About Us' section, and a seamless
+              'Contact Us' interface. Elevate your online presence and engage
+              customers effectively.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-row-reverse w-full">
+          <img
+            src="/assets/features/image-bootcamp-feature-1.png"
+            alt="feature-img-1"
+          />
+          <div
+            class="w-full flex flex-col justify-center gap-6 bg-wd-darkgrey px-8"
+          >
+            <h3 class="font-semibold text-2xl">
+              Project 2: HTML/CSS Static Website
+            </h3>
+            <p class="font-light text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              fugit consectetur vitae unde iure nesciunt placeat impedit
+              suscipit officia dolorum inventore molestias rem similique, nemo
+              cumque sapiente animi. Quia, est.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="w-full flex items-center text-primary font-semibold text-4xl gap-10 my-10 before:h-2 before:grow before:bg-primary after:h-2 after:grow after:bg-primary"
+      >
+        My blogs
+      </div>
+      <section class="w-full grid grid-cols-3 place-items-center gap-6">
+        <div>
+          <img
+            class="w-full object-cover"
+            src="/assets/grid/image-bootcamp-1.png"
+            alt="grid-img-1"
+          />
+        </div>
+        <div>
+          <img
+            class="w-full object-cover"
+            src="/assets/grid/image-bootcamp-2.png"
+            alt="grid-img-2"
+          />
+        </div>
+        <div>
+          <img
+            class="w-full object-cover"
+            src="/assets/grid/image-bootcamp-3.png"
+            alt="grid-img-3"
+          />
+        </div>
+        <div>
+          <img
+            class="w-full object-cover"
+            src="/assets/grid/image-bootcamp-4.png"
+            alt="grid-img-4"
+          />
+        </div>
+        <div>
+          <img
+            class="w-full object-cover"
+            src="/assets/grid/image-bootcamp-5.png"
+            alt="grid-img-5"
+          />
+        </div>
+        <div>
+          <img
+            class="w-full object-cover"
+            src="/assets/grid/image-bootcamp-6.png"
+            alt="grid-img-6"
+          />
+        </div>
+      </section>
+      <div
+        class="w-full flex items-center text-primary font-semibold text-4xl gap-10 my-10 before:h-2 before:grow before:bg-primary after:h-2 after:grow after:bg-primary"
+      >
+        Activities
+      </div>
+      <section
+        class="flex flex-col justify-center items-center w-full gap-8 mb-[100px]"
+      >
+        <div class="relative overflow-hidden">
+          <div class="w-[1216px] h-[436px]">
+            <img
+              class="my-slides"
+              src="/assets/slider/slide1.jpg"
+              alt="slide-img-1"
+            />
+            <img
+              class="my-slides"
+              src="/assets/slider/slide2.jpg"
+              alt="slide-img-2"
+            />
+            <img
+              class="my-slides"
+              src="/assets/slider/slide3.jpg"
+              alt="slide-img-3"
+            />
+            <img
+              class="my-slides"
+              src="/assets/slider/slide4.jpg"
+              alt="slide-img-4"
+            />
+          </div>
+
+          <a
+            class="text-white absolute top-[50%] left-3 cursor-pointer"
+            onclick="increaseSlideNumber(-1)"
+          >
+            <i class="fa-solid fa-chevron-left fa-2xl"></i>
+          </a>
+          <a
+            class="text-white absolute top-[50%] right-3 cursor-pointer"
+            onclick="increaseSlideNumber(1)"
+          >
+            <i class="fa-solid fa-chevron-right fa-2xl"></i>
+          </a>
+        </div>
+
+        <div class="flex gap-4 hover:cursor-pointer">
+          <div
+            class="rounded bg-primary border-primary border-[1px] w-2 h-2 dot-nav"
+            onclick="showSlide(0)"
+          ></div>
+          <div
+            class="rounded bg-primary border-primary border-[1px] w-2 h-2 dot-nav"
+            onclick="showSlide(1)"
+          ></div>
+          <div
+            class="rounded bg-primary border-primary border-[1px] w-2 h-2 dot-nav"
+            onclick="showSlide(2)"
+          ></div>
+          <div
+            class="rounded bg-primary border-primary border-[1px] w-2 h-2 dot-nav"
+            onclick="showSlide(3)"
+          ></div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <section></section>
-      <section></section>
+
+    <footer class="flex flex-col justify-center text-white">
+      <section class="flex justify-between gap-6 w-full pt-30 px-6">
+        <div class="flex flex-col gap-6 w-1/3">
+          <h3 class="text-4xl font-bold">Sirawee W</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            vel dolores quas distinctio provident, voluptates deserunt!
+          </p>
+          <form
+            onsubmit="onSubmit(event)"
+            class="flex flex-col gap-6 text-black"
+          >
+            <input
+              class="px-[14px] py-4"
+              name="myEmail"
+              type="email"
+              placeholder="Enter your E-mail"
+            />
+            <button class="bg-primary text-black gap-2 py-3 px-4 w-1/2">
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <div class="flex flex-col text-white w-1/3 gap-6">
+          <h3 class="text-[32px] font-bold">Get In Touch!</h3>
+          <p>
+            123 Sukhumvit Road, Bangkok, Thailand Unit 456, Silom Street,
+            Bangkok, Thailand
+          </p>
+          <p>Email: sirawee.wujt@example.com</p>
+          <div class="flex gap-6 text-wd-grey">
+            <i
+              class="fa-brands fa-facebook fa-2xl text-wd-darkgrey dot-nav"
+            ></i>
+            <i
+              class="fa-brands fa-instagram fa-2xl text-wd-darkgrey dot-nav"
+            ></i>
+            <i
+              class="fa-brands fa-x-twitter fa-2xl text-wd-darkgrey dot-nav"
+            ></i>
+          </div>
+        </div>
+      </section>
+      <section
+        class="text-center font-bold border-t-[1px] border-primary py-12 mt-12"
+      >
+        <p>© 2023, BEAM SIREWEE. All Rights Reserved.</p>
+      </section>
     </footer>
   </body>
+
+  <script>
+    function onSubmit(e) {
+      alert(
+        `You (${e.target.elements.myEmail.value}) has subscribed already !`
+      );
+    }
+
+    let slideNumber = 0;
+    showSlide(slideNumber);
+
+    function showSlide(n) {
+      const imageSlides = document.getElementsByClassName("my-slides");
+      const dotNavs = document.getElementsByClassName("dot-nav");
+
+      if (n >= imageSlides.length) {
+        slideNumber = 0;
+      } else if (n < 0) {
+        slideNumber = imageSlides.length - 1;
+      } else {
+        slideNumber = n;
+      }
+
+      for (let i = 0; i < imageSlides.length; i++) {
+        imageSlides[i].style.display = "none";
+        dotNavs[i].classList.remove("bg-primary");
+        dotNavs[i].classList.add("border-primary");
+        dotNavs[i].classList.add("border-[1px]");
+
+        imageSlides[slideNumber].style.display = "block";
+        dotNavs[slideNumber].classList.add("bg-primary");
+        dotNavs[slideNumber].classList.remove("border-primary");
+        dotNavs[slideNumber].classList.remove("border-[1px]");
+      }
+    }
+
+    function increaseSlideNumber(n) {
+      slideNumber += n;
+      showSlide(slideNumber);
+    }
+  </script>
 </html>
